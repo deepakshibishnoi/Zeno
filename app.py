@@ -81,7 +81,7 @@ def make_client():
 
 def start_chat(client):
     return client.chats.create(
-        model="gemini-2.5-flash",
+        model="gemini-3.8-flash",
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT + "\n\nHAIRCARE REFERENCE MANUAL:\n" + MANUAL,
             temperature=0.7,
